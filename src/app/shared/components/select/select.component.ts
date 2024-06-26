@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+type Option = {
+  name: string;
+  avatar: string;
+};
+
 @Component({
   selector: 'app-select',
   standalone: true,
@@ -50,7 +55,7 @@ export class SelectComponent {
     this.isOpen = !this.isOpen;
   }
 
-  selectOption(option: any, index: number) {
+  selectOption(option: Option, index: number) {
     this.selectedOption = option.name;
     this.selectedIdx = index;
     this.isOpen = false; // Close the dropdown after selecting an option
