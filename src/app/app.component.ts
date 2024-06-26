@@ -9,6 +9,8 @@ import { CardThreeComponent } from './shared/components/card-three/card-three.co
 import { ButtonAnchorComponent } from './shared/components/button-anchor/button-anchor.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { ListComponent } from './shared/components/list/list.component';
+import { SelectComponent } from './shared/components/select/select.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +26,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     ButtonAnchorComponent,
     ButtonComponent,
     FooterComponent,
+    ListComponent,
+    SelectComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass',
